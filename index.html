@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>CyberTech Restaurant Menu</title>
-</head>
-<body>
-    <center>
-    <h1>Welcome to CyberTech Restaurant</h1></center>
-    <h1>Restaurant Menu</h1>
+    <style>
+        h1.gradient-text {
+            font-size: 4rem;
+            text-align: center;
+            font-weight: bold;
+            background: linear-gradient(270deg, #120269, #9a0d8a, #28cde3, #01090b,#971919,#bb0f3a);
+            background-size: 800% 800%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientFlow 6s ease infinite;
+            margin-top: 50px;
+        }
+    
+        @keyframes gradientFlow {
+            0% { background-position: 0% 100%; }
+            50% { background-position: 80% 60%; }
+            100% { background-position: 0% 100%; }
+        }
+        </style>
+    </head>
+    <body>
+    
+    <center><h1 class="gradient-text">Welcome to CyberTech Restaurant</h1></center>
+    <h2>Restaurant Menu</h2>
     <h2>Starters</h2>
     <!--unordered list - create a list of items with bullets -> ul start the list , li each point inside the list -->
     <ul>
